@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BTHome Monitor – Support</title>
+
+    <!-- Favicons / app icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0a7cff" />
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #0b1220;
+        --muted: #5b6578;
+        --card: #f5f7fb;
+        --accent: #0a7cff;
+        --border: #e6e8ee;
+        --radius: 16px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b1220;
+          --fg: #e7ecf5;
+          --muted: #9aa4b2;
+          --card: #121a2b;
+          --accent: #4da3ff;
+          --border: #22314d;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.55;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      .app-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.9rem;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 20px;
+        margin: 16px 0;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1.2rem;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      footer {
+        margin-top: 24px;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <img src="icon-192.png" alt="BTHome Monitor icon" class="app-icon" />
+        <div>
+          <h1>BTHome Monitor – Support</h1>
+          <div class="muted">Monitor & proxy BTHome data</div>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2>Get Help</h2>
+        <p>
+          Questions, issues, or feedback? Email us at
+          <a
+            href="mailto:accounts&#64;tangerinium.nz?subject=BTHome Monitor Support"
+            >accounts (dot) tangerinium (dot) nz</a
+          >
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>FAQ</h2>
+        <p>
+          <strong>Why don’t I see any devices?</strong><br />
+          Ensure Bluetooth is enabled and the nearby sensors use the BTHome
+          protocol.
+        </p>
+        <p>
+          <strong>Can I relay data to another service?</strong><br />
+          Yes—set a webhook URL in the app’s settings to send sensor updates.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Terms of Use</h2>
+        <ul>
+          <li>The app is provided “as is” without warranties of any kind.</li>
+          <li>
+            You are responsible for how you use the app and any webhooks you
+            configure.
+          </li>
+          <li>
+            We are not liable for data loss, misuse, or damages arising from use
+            of the app.
+          </li>
+          <li>
+            Terms may be updated; continued use means you accept the latest
+            version.
+          </li>
+        </ul>
+      </div>
+
+      <footer class="muted">
+        <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
