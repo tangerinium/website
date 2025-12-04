@@ -81,6 +81,25 @@
       a:hover {
         text-decoration: underline;
       }
+      .cta {
+        text-align: center;
+      }
+      .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+        background: var(--accent);
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+      .button:hover {
+        text-decoration: none;
+        opacity: 0.9;
+      }
       .muted {
         color: var(--muted);
       }
@@ -95,10 +114,44 @@
       <header>
         <img src="icon-192.png" alt="BTHome Monitor icon" class="app-icon" />
         <div>
-          <h1>BTHome Monitor – Support</h1>
-          <div class="muted">Monitor & proxy BTHome data</div>
+          <h1>BTHome Monitor Support</h1>
+          <div class="muted">Monitor & proxy BTHome data on iOS</div>
         </div>
       </header>
+
+      <div class="card">
+        <h2>Features</h2>
+        <ul>
+          <li>
+            Discovers and displays nearby BTHome BLE sensors in real time.
+          </li>
+          <li>Supports BTHome V1 / BTHome V2 standards.</li>
+          <li>
+            Forwards readings to your preferred endpoint through webhooks.
+          </li>
+          <li>
+            Runs efficiently in the background so you never miss an update.
+          </li>
+        </ul>
+
+        <div class="cta">
+          <a
+            href="https://apps.apple.com/us/app/bthome-monitor/id6752530680?itscg=30200&itsct=apps_box_badge&mttnsubad=6752530680"
+            style="display: inline-block"
+          >
+            <img
+              src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1758844800"
+              alt="Download on the App Store"
+              style="
+                width: 245px;
+                height: 82px;
+                vertical-align: middle;
+                object-fit: contain;
+              "
+            />
+          </a>
+        </div>
+      </div>
 
       <div class="card">
         <h2>Get Help</h2>
